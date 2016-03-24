@@ -2,6 +2,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        target: cc.Node,
         pressedScale: 1,
         transDuration: 0
     },
@@ -9,20 +10,19 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         var self = this;
-        self.initScale = this.node.scale;
-        self.button = self.getComponent(cc.Button);
+        self.initScale = this.target.scale;
         self.scaleDownAction = cc.scaleTo(self.transDuration, self.pressedScale);
-        self.scaleUpAction = cc.scaleTo(self.transDuration, self.initScale);
+        self.scaleUpAction = cc.scaleTo(self.transDuration, self.initScale).easing(cc.easeBounceIn());
         function onTouchDown (event) {
-            this.stopAllActions();
-            this.runAction(self.scaleDownAction);
+            this.target.stopAllActions();
+            this.target.runAction(self.scaleDownAction);
         }
         function onTouchUp (event) {
-            this.stopAllActions();
-            this.runAction(self.scaleUpAction);
+            this.target.stopAllActions();
+            this.target.runAction(self.scaleUpAction);
         }
-        this.node.on('touchstart', onTouchDown, this.node);
-        this.node.on('touchend', onTouchUp, this.node);
-        this.node.on('touchcancel', onTouchUp, this.node);
+        this.node.on('touchstart', onTouchDown.bind(this), this.node);
+        this.node.on('touchend', onTouchUp.bind(this), this.node);
+        this.node.on('touchcancel', onTouchUp.bind(this), this.node);
     }
 });

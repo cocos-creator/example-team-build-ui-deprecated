@@ -1,36 +1,61 @@
-const TabSize = cc.Class({
-    name: 'TabSize',
+const TabData = cc.Class({
+    name: 'TabData',
     properties: {
-        topMin: '',
-        topMax: '',
-        botMin: '',
-        botMax: ''
+        text: '',
+        iconSF: cc.SpriteFrame
     }
 });
-
-const TabSidebar = require('TabSidebar');
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        tabSizes: {
+        tabData: {
             default: [],
-            type: TabSize
+            type: TabData
         },
-        tabs: {
-            default: [],
-            type: TabSidebar
-        }
+        tabPrefab: cc.Prefab,
+        container: cc.Node,
+        highlight: cc.Node,
+        tabHeight: 0
     },
 
     // use this for initialization
-    onLoad: function () {
-
+    init (mainMenu) {
+        this.mainMenu = mainMenu;
+        this.tabSwitchDuration = mainMenu.tabSwitchDuration;
+        this.curTabIdx = 0;
+        this.tabs = [];
+        for (let i = 0; i < this.tabData.length; ++i) {
+            let data = this.tabData[i];
+            let tab = cc.instantiate(this.tabPrefab).getComponent('TabCtrl');
+            this.container.addChild(tab.node);
+            tab.init({
+                sidebar: this,
+                idx: i,
+                data: data
+            });
+            this.tabs[i] = tab;
+        }
+        this.tabs[this.curTabIdx].turnBig();
+        this.highlight.y = this.curTabIdx * -this.tabHeight;
     },
 
-    // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
+    tabPressed (idx) {
+        for (let i = 0; i < this.tabs.length; ++i) {
+            let tab = this.tabs[i];
+            if (tab.idx === idx) {
+                tab.turnBig();
+                cc.eventManager.pauseTarget(tab.node);
+            } else if (this.curTabIdx === tab.idx) {
+                tab.turnSmall();
+                cc.eventManager.resumeTarget(tab.node);
+            }
+        }
+        this.curTabIdx = idx;
+        let highlightMove = cc.moveTo(this.tabSwitchDuration, cc.p(0, this.curTabIdx * -this.tabHeight)).easing(cc.easeQuinticActionInOut());
+        this.highlight.stopAllActions();
+        this.highlight.runAction(highlightMove);
+        this.mainMenu.switchPanel(this.curTabIdx);
+    }
 });
