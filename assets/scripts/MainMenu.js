@@ -1,10 +1,12 @@
 const MenuSidebar = require('MenuSidebar');
+const TeamBuild = require('TeamBuild');
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
         sidebar: MenuSidebar,
+        teamPanel: TeamBuild,
         roller: cc.Node,
         panelHeight: 0,
         tabSwitchDuration: 0
@@ -13,6 +15,7 @@ cc.Class({
     // use this for initialization
     onLoad () {
         this.sidebar.init(this);
+        this.teamPanel.init(this);
         this.curPanelIdx = 0;
         this.roller.y = this.curPanelIdx * this.panelHeight;
     },

@@ -1,0 +1,32 @@
+{
+    "name": "excel-to-json",
+    "version": "0.0.1",
+    "description": "A package parse excel and export to json",
+    "author": "Chukong Technologies",
+    "main": "main.js",
+    "build": false,
+    "main-menu": {
+        "Examples/Excel to JSON": {
+            "message": "excel-to-json:open"
+        }
+    },
+    "panels": {
+        "panel": {
+            "frame": "panel/panel.html",
+            "type": "dockable",
+            "title": "Demo: Excel to JSON",
+            "width": 600,
+            "height": 600,
+            "messages": [],
+            "profiles": {
+                "local": {
+                    "srcExcelPath": "",
+                    "outJsonName": ""
+                }
+            }
+        }
+    },
+    "dependencies": {
+        "xlsx-to-json": "0.2.4"
+    }
+}
