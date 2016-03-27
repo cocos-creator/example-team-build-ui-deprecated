@@ -1,0 +1,28 @@
+{
+  "ver": "1.0.0",
+  "uuid": "9a76f34e-4722-4749-9ef4-377ce3ab1040",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "d_a_putana": {
+      "ver": "1.0.2",
+      "uuid": "e905d893-4d93-4776-a05d-7b768ac983d9",
+      "rawTextureUuid": "9a76f34e-4722-4749-9ef4-377ce3ab1040",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 22,
+      "offsetY": -24,
+      "trimX": 65,
+      "trimY": 60,
+      "width": 252,
+      "height": 266,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

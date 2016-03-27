@@ -1,0 +1,28 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f89528c3-2354-4a31-9cde-50280ca95dd4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "d_a_fergus": {
+      "ver": "1.0.2",
+      "uuid": "40014c01-65b0-4312-9619-c6a0460d33d3",
+      "rawTextureUuid": "f89528c3-2354-4a31-9cde-50280ca95dd4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": -16,
+      "trimX": 12,
+      "trimY": 37,
+      "width": 317,
+      "height": 296,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
