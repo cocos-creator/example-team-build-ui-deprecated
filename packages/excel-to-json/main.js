@@ -18,7 +18,7 @@ module.exports = {
             }
             Editor.log('processing excel parse...');
             Editor.log('src: ' + opts.srcPath + ' outname: ' + opts.outName);
-            var outPath = Path.join(Path.dirname(opts.srcPath), opts.outName);
+            var outPath = Path.join(Editor.projectPath, 'assets/resources/data', opts.outName);
             xlsxj({
                 input: opts.srcPath,  // input xls
                 output: outPath,  // output json
