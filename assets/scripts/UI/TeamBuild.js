@@ -6,6 +6,7 @@ cc.Class({
 
     properties: {
         scrollView: cc.ScrollView,
+        listLayout: cc.Layout,
         iconClass: cc.Sprite,
         labelClass: cc.Label,
         labelName: cc.Label,
@@ -25,66 +26,59 @@ cc.Class({
     init (mainMenu) {
         this.mainMenu = mainMenu;
         this.heroInfos = []; //{id, name, class, sf, iconAnchor, hp, atk, ap}
-        this.heroContentPosX = []; // record content position when hero is center
+        this.lastContentPosX = 0;
+        this.heroesInList = [];
         DataMng.loadHeroes(function(heroInfos) {
             this.heroInfos = heroInfos;
             this.onHeroLoaded();
         }.bind(this));
         // listen to scroll end
         this.scrollView.node.on('touchend', this.onScrollEnd.bind(this));
+        this.scrollView.node.on('touchcancel', this.onScrollEnd.bind(this));
+        this.scrollView.node.on('touchstart', this.onScrollStart.bind(this));
+    },
+
+    onScrollStart (event) {
+        this.lastContentPosX = this.scrollView.getContentPosition().x;
     },
 
     onScrollEnd (event) {
         let contentPos = this.scrollView.getContentPosition();
-        cc.log(contentPos.x);
-        this.scrollToNearest(contentPos.x);
+        // cc.log(contentPos.x);
+        this.scrollToNext(contentPos.x);
     },
 
-    scrollToNearest (contentPosX) {
-        let idx = 0;
+    scrollToNext (contentPosX) {
         let destPosX = 0;
-        let length = this.heroContentPosX.length;
+        let length = this.heroesInList.length;
         for (let i = 0; i < length; ++i) {
-            if (contentPosX > this.heroContentPosX[0]) {
-                destPosX = this.heroContentPosX[0];
-                idx = 0;
+            if (contentPosX > - this.heroesInList[0].x) {
+                destPosX = - this.heroesInList[0].x;
                 break;
-            } else if (contentPosX >= this.heroContentPosX[i] &&
-                contentPosX < this.heroContentPosX[i - 1]) {
-                if (Math.abs(contentPosX - this.heroContentPosX[i]) < Math.abs(this.heroContentPosX[i - 1] - contentPosX)) {
-                    destPosX = this.heroContentPosX[i];
-                    idx = i;
+            } else if (contentPosX >= -this.heroesInList[i].x &&
+                contentPosX < -this.heroesInList[i - 1].x) {
+                if (contentPosX < this.lastContentPosX) {
+                    destPosX = - this.heroesInList[i].x;
                 } else {
-                    destPosX = this.heroContentPosX[i - 1];
-                    idx = i - 1;
+                    destPosX = - this.heroesInList[i - 1].x;
                 }
                 break;
-            } else if (contentPosX < this.heroContentPosX[length - 1]) {
-                destPosX = this.heroContentPosX[length - 1];
-                idx = length - 1;
+            } else if (contentPosX < - this.heroesInList[length - 1].x) {
+                destPosX = - this.heroesInList[length - 1].x;
+                break;
             }
         }
-        // cc.log('dest pos x: ' + destPosX);
-        // cc.log('select hero: ' + idx);
-        this.scrollView.scrollToPercentHorizontal((destPosX - this.heroContentPosX[0])/this.totalScrollDist, this.snapTime, true);
+        this.scrollView._startAutoScroll(cc.pNeg(cc.p(this.scrollView.content.x - destPosX, 0)), this.snapTime, true);
     },
 
     onHeroLoaded () {
-        // cc.log(this.heroInfos);
         let totalDist = 0;
         for (let i = 0; i < this.heroInfos.length; ++i ) {
             let heroInList = cc.instantiate(this.heroListPrefab).getComponent('HeroInList');
             heroInList.init(this.heroInfos[i]);
             this.scrollView.content.addChild(heroInList.node);
-            if (i === 0) {
-                this.heroContentPosX[i] = - 450 - heroInList.node.width * this.heroInfos[i].portraitAnchor.x;
-            } else {
-                this.heroContentPosX[i] = totalDist - heroInList.node.width * this.heroInfos[i].portraitAnchor.x;
-            }
-            totalDist = this.heroContentPosX[i] - heroInList.node.width * (1 - this.heroInfos[i].portraitAnchor.x) - 100;
+            this.heroesInList.push(heroInList.node);
         }
-        this.totalScrollDist = this.heroContentPosX[this.heroContentPosX.length - 1] - this.heroContentPosX[0];
-        // cc.log(this.heroContentPosX);
     },
 
     updateHeroStats (heroInfo) { //{name, class, hp, atk, ap}

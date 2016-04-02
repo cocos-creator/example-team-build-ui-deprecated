@@ -3,7 +3,8 @@ cc.Class({
 
     properties: {
         anim: cc.Animation,
-        sprite: cc.Sprite
+        sprite: cc.Sprite,
+        debug_line: cc.Node
     },
 
     // use this for initialization
@@ -11,6 +12,7 @@ cc.Class({
         this.id = heroInfo.id;
         this.sprite.spriteFrame = heroInfo.sf;
         this.node.setAnchorPoint(heroInfo.portraitAnchor);
+        this.debug_line.x = 0;
         this.onDeselect();
     },
 
