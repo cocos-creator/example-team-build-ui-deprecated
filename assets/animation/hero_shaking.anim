@@ -1,0 +1,84 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "hero_shaking",
+  "_objFlags": 0,
+  "_duration": 0.64,
+  "sample": 25,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.08,
+          "value": 1
+        },
+        {
+          "frame": 0.24,
+          "value": -1
+        },
+        {
+          "frame": 0.4,
+          "value": 1
+        },
+        {
+          "frame": 0.56,
+          "value": -1
+        },
+        {
+          "frame": 0.64,
+          "value": 0
+        }
+      ]
+    },
+    "paths": {
+      "blueRing": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.95
+            },
+            {
+              "frame": 0.32,
+              "value": 1.02
+            },
+            {
+              "frame": 0.64,
+              "value": 0.95
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.95
+            },
+            {
+              "frame": 0.32,
+              "value": 1.02
+            },
+            {
+              "frame": 0.64,
+              "value": 0.95
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -16,7 +16,7 @@ cc.Class({
     onLoad () {
         this.sidebar.init(this);
         this.teamPanel.init(this);
-        this.curPanelIdx = 0;
+        this.curPanelIdx = 1;
         this.roller.y = this.curPanelIdx * this.panelHeight;
     },
 

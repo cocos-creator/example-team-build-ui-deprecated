@@ -130,5 +130,11 @@
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.3333333333333333,
+      "func": "onStatsHide",
+      "params": []
+    }
+  ]
 }
