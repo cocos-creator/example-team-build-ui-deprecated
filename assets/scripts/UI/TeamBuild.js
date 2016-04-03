@@ -1,5 +1,6 @@
 const DataMng = require('DataMng');
 const HeroClass = require('Types').HeroClass;
+const SkillList = require('SkillList');
 const MAX_HP = 1500;
 const MAX_ATK = 200;
 const MAX_AP = 200;
@@ -11,6 +12,7 @@ cc.Class({
         scrollView: cc.ScrollView,
         listLayout: cc.Layout,
         teamLayout: cc.Layout,
+        skillList: SkillList,
         iconClass: cc.Sprite,
         labelClass: cc.Label,
         labelName: cc.Label,
@@ -43,7 +45,11 @@ cc.Class({
         this.anim = this.getComponent(cc.Animation);
         DataMng.loadHeroes(function(heroInfos) {
             this.heroInfos = heroInfos;
-            this.onHeroLoaded();
+            DataMng.loadActiveSkills(function() {
+                DataMng.loadPassiveSkills(function () {
+                    this.onHeroLoaded();
+                }.bind(this));
+            }.bind(this));
         }.bind(this));
         // listen to scroll end
         this.scrollView.node.on('touchend', this.onScrollEnd.bind(this));
@@ -106,6 +112,7 @@ cc.Class({
     },
 
     onHeroLoaded () {
+        // cc.log(DataMng.activeSkills);
         let totalDist = 0;
         for (let i = 0; i < this.heroInfos.length; ++i ) {
             let heroInList = cc.instantiate(this.heroListPrefab).getComponent('HeroInList');
@@ -153,6 +160,7 @@ cc.Class({
         this.barHp.progress = heroInfo.hp/MAX_HP;
         this.barAtk.progress = heroInfo.atk/MAX_ATK;
         this.barAp.progress = heroInfo.ap/MAX_AP;
+        this.skillList.init(heroInfo);
     },
 
     // this hack is to get when layout finished

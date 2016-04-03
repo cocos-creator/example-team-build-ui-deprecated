@@ -8,7 +8,7 @@ module.exports = {
             Editor.Panel.open('excel-to-json.panel');
         },
         //
-        parse (event, opts) {
+        parse () {
             var xlsxj;
             try {
                 xlsxj = require('xlsx-to-json');
@@ -16,18 +16,54 @@ module.exports = {
                 Editor.log('Please install npm dependencies first.');
                 return;
             }
+            let srcPath = Path.join(Editor.projectPath, 'heroes.xlsx');
             Editor.log('processing excel parse...');
-            Editor.log('src: ' + opts.srcPath + ' outname: ' + opts.outName);
-            var outPath = Path.join(Editor.projectPath, 'assets/resources/data', opts.outName);
+            Editor.log('src: ' + srcPath);
+            let outPath = Path.join(Editor.projectPath, 'assets/resources/data');
+            function Refresh(outName) {
+                Editor.assetdb.refresh ( 'db://assets/resources/data/' + outName, (err, results) => {
+                        if ( err ) {
+                            Editor.assetdb.error('Failed to reimport asset %s, %s', outName, err.stack);
+                            return;
+                        }
+                        Editor.assetdb._handleRefreshResults(results);
+                });
+            }
             xlsxj({
-                input: opts.srcPath,  // input xls
-                output: outPath,  // output json
+                input: srcPath,  // input xls
+                output: Path.join(outPath, 'heroes.json'), // output json
+                sheet: 'heroes'
             }, function(err, result) {
                 if(err) {
                     console.error(err);
                     return;
                 }
-                Editor.success("Convert excel to json complete: " + outPath);
+                Editor.success("Convert heroes to json complete");
+                Refresh('heroes.json');
+            });
+            xlsxj({
+                input: srcPath,  // input xls
+                output: Path.join(outPath, 'activeskills.json'), // output json
+                sheet: 'activeskills'
+            }, function(err, result) {
+                if(err) {
+                    console.error(err);
+                    return;
+                }
+                Editor.success("Convert activeskills to json complete");
+                Refresh('activeskills.json');
+            });
+            xlsxj({
+                input: srcPath,  // input xls
+                output: Path.join(outPath, 'passiveskills.json'), // output json
+                sheet: 'passiveskills'
+            }, function(err, result) {
+                if(err) {
+                    console.error(err);
+                    return;
+                }
+                Editor.success("Convert passiveskills to json complete");
+                Refresh('passiveskills.json');
             });
         },
         install (event, opts) {
