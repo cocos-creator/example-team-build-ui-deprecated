@@ -7,7 +7,7 @@
     "height": 90
   },
   "type": "Texture Packer",
-  "rawTextureUrl": "db://assets/atlas/skill_icons.png",
+  "rawTextureUrl": "db://assets/resources/skills/skill_icons.png",
   "subMetas": {
     "skill_1000.png": {
       "ver": "1.0.2",
