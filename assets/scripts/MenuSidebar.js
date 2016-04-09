@@ -24,7 +24,7 @@ cc.Class({
     init (mainMenu) {
         this.mainMenu = mainMenu;
         this.tabSwitchDuration = mainMenu.tabSwitchDuration;
-        this.curTabIdx = 0;
+        this.curTabIdx = 1;
         this.tabs = [];
         for (let i = 0; i < this.tabData.length; ++i) {
             let data = this.tabData[i];
