@@ -14,13 +14,19 @@ cc.Class({
         spine: sp.Skeleton,
         moveSpeed: 0,
         dashSpeed: 0,
-        debugLabel: cc.Label
+        debugLabel: cc.Label,
     },
 
     // use this for initialization
     onLoad: function () {
         this.moveState = MoveState.Idle;
         this.lastState = null;
+        this.bufferState = null; // if there are attacks buffered
+        this.canMove = true;
+        this.lastLeftTime = 0;
+        this.lastRightTime = 0;
+        this.isMoving = false;
+        this.canvas = cc.find('Canvas');
         this.setInputControl();
     },
 
@@ -38,14 +44,46 @@ cc.Class({
                 switch(keyCode) {
                     case cc.KEY.a:
                     case cc.KEY.left:
-                        self.moveState = MoveState.RunLeft;
+                        this.lastRightTime = 0;
+                        if (Date.now() - this.lastLeftTime <= 200) {
+                            if (self.canMove) {
+                                self.moveState = MoveState.DashLeft;
+                            } else {
+                                self.bufferState = MoveState.DashLeft;
+                            }
+                        } else {
+                            if (self.canMove) {
+                                self.moveState = MoveState.RunLeft;
+                            } else {
+                                self.bufferState = MoveState.RunLeft;
+                            }
+                        }
+                        this.lastLeftTime = Date.now();
                         break;
                     case cc.KEY.d:
                     case cc.KEY.right:
-                        self.moveState = MoveState.RunRight;
+                        this.lastLeftTime = 0;
+                        if (Date.now() - this.lastRightTime <= 200) {
+                            if (self.canMove) {
+                                self.moveState = MoveState.DashRight;
+                            } else {
+                                self.bufferState = MoveState.DashRight;
+                            }
+                        } else {
+                            if (self.canMove) {
+                                self.moveState = MoveState.RunRight;
+                            } else {
+                                self.bufferState = MoveState.RunRight;
+                            }
+                        }
+                        this.lastRightTime = Date.now();
                         break;
                     case cc.KEY.space:
-                        self.moveState = MoveState.Attack1;
+                        if (self.canMove) {
+                            self.moveState = MoveState.Attack1;
+                        } else {
+                            self.bufferState = MoveState.Attack1;
+                        }
                         break;
                 }
             }
@@ -74,39 +112,44 @@ cc.Class({
     },
 
     setSkeletonAnimation () {
-        // this._setMix('walk', 'run');
-        // this._setMix('run', 'jump');
-        // this._setMix('walk', 'jump');
         let spine = this.spine;
-        spine.setStartListener(track => {
-            var entry = spine.getCurrent(track);
-            if (entry) {
-                var animationName = entry.animation ? entry.animation.name : "";
-                cc.log("[track %s] start: %s", track, animationName);
-            }
-        });
+        this.rootBone = spine.findBone('root');
+        // spine.setMix('idle', 'run', 0.3);
+        // spine.setMix('atk_1', 'run', 0.3);
+        // spine.setMix('atk_1', 'atk_1', 0.2);
         spine.setEndListener(track => {
-            cc.log("[track %s] end", track);
+            // cc.log("[track %s] end", track);
             let entry = spine.getCurrent(track);
             if (entry) {
                 let animationName = entry.animation ? entry.animation.name : '';
                 if (animationName === 'atk_1') {
-                    cc.log('attack end!');
+                    // cc.log('attack complete!');
+                    this.onAttack1End();
                 }
             }
         });
         spine.setCompleteListener((track, loopCount) => {
-            cc.log("[track %s] complete: %s", track, loopCount);
+            // cc.log("[track %s] complete: %s", track, loopCount);
             let entry = spine.getCurrent(track);
             if (entry) {
                 let animationName = entry.animation ? entry.animation.name : '';
-                if (animationName === 'atk_1') {
-                    cc.log('attack complete!');
+                if (animationName.indexOf('atk_') !== -1) {
+                    // cc.log('attack complete!');
+                    this.onAttackComplete();
+                } else if (animationName.indexOf('dash') !== -1) {
+                    this.onDashComplete();
                 }
             }
         });
         spine.setEventListener((track, event) => {
-            cc.log("[track %s] event: %s, %s, %s, %s", track, event.data.name, event.intValue, event.floatValue, event.stringValue);
+            // cc.log("[track %s] event: %s, %s, %s, %s", track, event.data.name, event.intValue, event.floatValue, event.stringValue);
+            if (event.data.name === 'atk_1') {
+                if (event.stringValue === 'end') {
+                    this.onAttack1Cancelable();
+                }
+            } else if (event.data.name === 'invi_end') {
+                this.onDashInviEnd();
+            }
         });
     },
 
@@ -141,16 +184,121 @@ cc.Class({
         this.lastState = this.moveState;
     },
 
+    updateStateDashLeft(dt) {
+        if (this.lastState !== this.moveState) {
+            this.node.scaleX = -1;
+            this.spine.setAnimation(0, 'dash', false);
+            this.lastState = this.moveState;
+            this.bufferState = null;
+            this.canMove = false;
+            this.isMoving = true;
+        }
+        if (this.isMoving) {
+            this.node.x -= this.dashSpeed * dt;
+        }
+    },
+
+    updateStateDashRight(dt) {
+        if (this.lastState !== this.moveState) {
+            this.node.scaleX = 1;
+            this.spine.setAnimation(0, 'dash', false);
+            this.lastState = this.moveState;
+            this.bufferState = null;
+            this.canMove = false;
+            this.isMoving = true;
+        }
+        if (this.isMoving) {
+            this.node.x += this.dashSpeed * dt;
+        }
+    },
+
+    updateStateMoveLeft (dt) {
+        if (this.lastState !== this.moveState) {
+            this.node.scaleX = -1;
+            this.spine.setAnimation(0, 'run', true);
+            this.lastState = this.moveState;
+            this.bufferState = null;
+            this.isMoving = true;
+        }
+        this.node.x -= this.moveSpeed * dt;
+    },
+
+    updateStateMoveRight (dt) {
+        if (this.lastState !== this.moveState) {
+            this.node.scaleX = 1;
+            this.spine.setAnimation(0, 'run', true);
+            this.lastState = this.moveState;
+            this.bufferState = null;
+            this.isMoving = true;
+        }
+        this.node.x += this.moveSpeed * dt;
+    },
+
     updateStateAttack1() {
-        if (this.lastState === this.moveState) {
+        if (!this.canMove) {
             return;
         }
-        this.spine.setAnimation(0, 'atk_1', false);
-        this.lastState = this.moveState;
+
+        if (this.lastState !== this.moveState ||
+            this.bufferState === MoveState.Attack1) {
+            this.spine.clearTrack(0);
+            // this.spine.setToSetupPose();
+            this.spine.setAnimation(0, 'atk_1', false);
+            this.bufferState = null;
+            this.lastState = this.moveState;
+            this.canMove = false;
+        }
+    },
+
+    onAttack1Cancelable() {
+        this.canMove = true;
+        if (this.bufferState) {
+            this.moveState = this.bufferState;
+        }
+    },
+
+    onDashInviEnd() {
+        this.isMoving = false;
+    },
+
+    onAttack1End() {
+        let rootX = this.rootBone.x;
+        // cc.log('currentRootX: ' + rootX);
+        if (this.node.scaleX > 0) { // toward right
+            this.node.x += rootX;
+        } else {
+            this.node.x -= rootX;
+        }
+        this.rootBone.x = 0;
+    },
+
+    onAttackComplete() {
+        if (this.node.scaleX > 0) { // toward right
+            this.moveState = MoveState.RunRight;
+        } else {
+            this.moveState = MoveState.RunLeft;
+        }
+    },
+
+    onDashComplete () {
+        this.canMove = true;
+        if (this.node.scaleX > 0) { // toward right
+            this.moveState = MoveState.RunRight;
+        } else {
+            this.moveState = MoveState.RunLeft;
+        }
     },
 
     update: function (dt) {
         this.updateMoveState(dt);
-        this.debugLabel.string = 'move state: ' + this.moveState;
+        if (this.node.x > this.canvas.width/2 - 50) {
+            this.node.x = this.canvas.width/2 - 50;
+        } else if (this.node.x < -this.canvas.width/2 + 50) {
+            this.node.x = -this.canvas.width/2 + 50;
+        }
+
+        this.debugLabel.string = 'move state: ' + MoveState[this.moveState] +
+            '\n last state: ' + MoveState[this.lastState] +
+            '\n root x: ' + this.rootBone.x;
     },
 });
