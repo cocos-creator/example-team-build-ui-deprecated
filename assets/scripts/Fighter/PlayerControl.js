@@ -10,12 +10,13 @@ const MoveState = cc.Enum({
 cc.Class({
     extends: cc.Component,
 
-    properties: {
+    properties: () => ({
         spine: sp.Skeleton,
         moveSpeed: 0,
         dashSpeed: 0,
         debugLabel: cc.Label,
-    },
+        camera: require('Camera')
+    }),
 
     // use this for initialization
     onLoad: function () {
@@ -26,7 +27,7 @@ cc.Class({
         this.lastLeftTime = 0;
         this.lastRightTime = 0;
         this.isMoving = false;
-        this.canvas = cc.find('Canvas');
+        this.canvas = cc.find('Canvas/sceneRoot/bg');
         this.setInputControl();
     },
 
@@ -84,6 +85,7 @@ cc.Class({
                         } else {
                             self.bufferState = MoveState.Attack1;
                         }
+                        self.camera.zoomToTarget();
                         break;
                 }
             }
