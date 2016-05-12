@@ -9,7 +9,7 @@ module.exports = {
             } else {
                 let list = data;
                 let count = list.length;
-                for (let i = 0; i < count; ++i) {
+                for (let i = 0; i < list.length; ++i) {
                     let heroInfo = list[i];
                     heroes[heroInfo.id] = heroInfo;
                     let posArr = heroInfo.iconPos.split('|');
@@ -38,7 +38,7 @@ module.exports = {
             } else {
                 let list = data;
                 let count = list.length;
-                for (let i = 0; i < count; ++i) {
+                for (let i = 0; i < list.length; ++i) {
                     let skillInfo = list[i];
                     activeSkills[skillInfo.id] = skillInfo;
                     cc.loader.loadRes('skills/' + skillInfo.icon, function(err, spriteFrame) {
@@ -62,7 +62,7 @@ module.exports = {
             } else {
                 let list = data;
                 let count = list.length;
-                for (let i = 0; i < count; ++i) {
+                for (let i = 0; i < list.length; ++i) {
                     let skillInfo = list[i];
                     passiveSkills[skillInfo.id] = skillInfo;
                     cc.loader.loadRes('skills/' + skillInfo.icon, function(err, spriteFrame) {
