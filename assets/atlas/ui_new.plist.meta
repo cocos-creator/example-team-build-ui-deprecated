@@ -1,5 +1,5 @@
 {
-  "ver": "1.2.0",
+  "ver": "1.2.4",
   "uuid": "8c3095db-8a8e-402b-b435-02b4a608a5fb",
   "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
   "size": {
@@ -7,10 +7,9 @@
     "height": 510
   },
   "type": "Texture Packer",
-  "rawTextureUrl": "db://assets/atlas/ui_new.png",
   "subMetas": {
     "bar_horizontal_black.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "4e977adc-b6cc-4c44-851b-fe9a21509051",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -22,6 +21,8 @@
       "trimY": 204,
       "width": 140,
       "height": 16,
+      "rawWidth": 140,
+      "rawHeight": 16,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 14,
@@ -30,7 +31,7 @@
       "subMetas": {}
     },
     "bar_vertical.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "55ba2a92-e7fb-4d25-83d2-e41ec7eb682c",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -42,6 +43,8 @@
       "trimY": 478,
       "width": 2,
       "height": 9,
+      "rawWidth": 2,
+      "rawHeight": 9,
       "borderTop": 1,
       "borderBottom": 1,
       "borderLeft": 0,
@@ -50,7 +53,7 @@
       "subMetas": {}
     },
     "bar_vertical_yellow.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "4350df27-9e22-4f81-9117-225d839d5be5",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -62,6 +65,8 @@
       "trimY": 474,
       "width": 2,
       "height": 30,
+      "rawWidth": 2,
+      "rawHeight": 30,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -70,7 +75,7 @@
       "subMetas": {}
     },
     "bg_black_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "42dc7c0b-943b-4ea2-91cf-2bde6d300bef",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -82,6 +87,8 @@
       "trimY": 152,
       "width": 55,
       "height": 41,
+      "rawWidth": 55,
+      "rawHeight": 41,
       "borderTop": 15,
       "borderBottom": 15,
       "borderLeft": 17,
@@ -90,7 +97,7 @@
       "subMetas": {}
     },
     "bg_black_grey_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "8449c859-15eb-4375-961a-4fe1781803ff",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -102,6 +109,8 @@
       "trimY": 335,
       "width": 33,
       "height": 43,
+      "rawWidth": 35,
+      "rawHeight": 43,
       "borderTop": 11,
       "borderBottom": 8,
       "borderLeft": 9,
@@ -110,7 +119,7 @@
       "subMetas": {}
     },
     "bg_black_round.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "80e46ab3-7cef-4005-8b1e-34fc2387d88e",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -122,6 +131,8 @@
       "trimY": 411,
       "width": 29,
       "height": 29,
+      "rawWidth": 31,
+      "rawHeight": 29,
       "borderTop": 11,
       "borderBottom": 12,
       "borderLeft": 12,
@@ -130,7 +141,7 @@
       "subMetas": {}
     },
     "bg_blue_mono.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "e835bdc2-393b-422b-a21e-ad22e683f4ea",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -142,6 +153,8 @@
       "trimY": 411,
       "width": 14,
       "height": 14,
+      "rawWidth": 14,
+      "rawHeight": 14,
       "borderTop": 5,
       "borderBottom": 5,
       "borderLeft": 5,
@@ -150,7 +163,7 @@
       "subMetas": {}
     },
     "bg_brown_big_gold_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "f6d1b2da-281f-413d-ba89-432e2be7f8ff",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -162,6 +175,8 @@
       "trimY": 196,
       "width": 129,
       "height": 128,
+      "rawWidth": 131,
+      "rawHeight": 130,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -170,7 +185,7 @@
       "subMetas": {}
     },
     "bg_brown_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "9e9d1ba2-cad7-4e68-b450-bac9085f0e3c",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -182,6 +197,8 @@
       "trimY": 270,
       "width": 33,
       "height": 32,
+      "rawWidth": 33,
+      "rawHeight": 32,
       "borderTop": 11,
       "borderBottom": 11,
       "borderLeft": 11,
@@ -190,7 +207,7 @@
       "subMetas": {}
     },
     "bg_brown_inner_shadow.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "bcda9b6a-fa1b-4611-aae3-d3115f8d34a9",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -202,6 +219,8 @@
       "trimY": 276,
       "width": 33,
       "height": 32,
+      "rawWidth": 33,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -210,7 +229,7 @@
       "subMetas": {}
     },
     "bg_brown_round.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "f378211c-ffba-42cc-9205-d1de2ba16eb4",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -222,6 +241,8 @@
       "trimY": 472,
       "width": 26,
       "height": 25,
+      "rawWidth": 26,
+      "rawHeight": 25,
       "borderTop": 6,
       "borderBottom": 7,
       "borderLeft": 8,
@@ -230,7 +251,7 @@
       "subMetas": {}
     },
     "bg_circle_big.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "e03788fe-369a-4311-bdb4-3a7172926701",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -242,6 +263,8 @@
       "trimY": 235,
       "width": 83,
       "height": 93,
+      "rawWidth": 89,
+      "rawHeight": 93,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -250,7 +273,7 @@
       "subMetas": {}
     },
     "bg_circle_small.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "22c1f6f2-da29-4583-a119-927e8f8cfd1f",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -262,6 +285,8 @@
       "trimY": 335,
       "width": 43,
       "height": 43,
+      "rawWidth": 43,
+      "rawHeight": 43,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -270,7 +295,7 @@
       "subMetas": {}
     },
     "bg_dark_brass_frame-65.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "c4dc3af9-638f-4bff-89c4-9f21c044be61",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -282,6 +307,8 @@
       "trimY": 474,
       "width": 3,
       "height": 3,
+      "rawWidth": 1,
+      "rawHeight": 2,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -290,7 +317,7 @@
       "subMetas": {}
     },
     "bg_dark_brass_frame-66.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "4f170562-85a8-47ea-a478-70dd0f720fd9",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -302,6 +329,8 @@
       "trimY": 474,
       "width": 3,
       "height": 3,
+      "rawWidth": 1,
+      "rawHeight": 2,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -310,7 +339,7 @@
       "subMetas": {}
     },
     "bg_dark_brass_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "98e3d9f5-0494-4ee6-b43c-3b8e2db5f26c",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -322,6 +351,8 @@
       "trimY": 196,
       "width": 35,
       "height": 34,
+      "rawWidth": 35,
+      "rawHeight": 34,
       "borderTop": 13,
       "borderBottom": 12,
       "borderLeft": 10,
@@ -330,7 +361,7 @@
       "subMetas": {}
     },
     "bg_dark_brown_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "e5b7b428-3eb3-4df4-b730-b4cd54ec4f5f",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -342,6 +373,8 @@
       "trimY": 202,
       "width": 33,
       "height": 31,
+      "rawWidth": 33,
+      "rawHeight": 31,
       "borderTop": 10,
       "borderBottom": 11,
       "borderLeft": 10,
@@ -350,7 +383,7 @@
       "subMetas": {}
     },
     "bg_dark_trans_black_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5f33d4b8-6412-4158-b8cb-5c7d44286b9b",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -362,6 +395,8 @@
       "trimY": 310,
       "width": 24,
       "height": 23,
+      "rawWidth": 24,
+      "rawHeight": 23,
       "borderTop": 8,
       "borderBottom": 9,
       "borderLeft": 8,
@@ -370,7 +405,7 @@
       "subMetas": {}
     },
     "bg_dialog.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "1094cc53-0b70-44dd-a965-a825e9a31e62",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -382,6 +417,8 @@
       "trimY": 320,
       "width": 82,
       "height": 87,
+      "rawWidth": 84,
+      "rawHeight": 87,
       "borderTop": 33,
       "borderBottom": 39,
       "borderLeft": 33,
@@ -390,7 +427,7 @@
       "subMetas": {}
     },
     "bg_gold_mono.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "7b42f886-b5b6-4603-9955-812d76e49d1c",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -402,6 +439,8 @@
       "trimY": 427,
       "width": 14,
       "height": 14,
+      "rawWidth": 14,
+      "rawHeight": 14,
       "borderTop": 5,
       "borderBottom": 5,
       "borderLeft": 5,
@@ -410,7 +449,7 @@
       "subMetas": {}
     },
     "bg_green_gradient.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "ae268b5a-9ca2-4b7e-9ad0-236265cd85b0",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -422,6 +461,8 @@
       "trimY": 452,
       "width": 9,
       "height": 9,
+      "rawWidth": 9,
+      "rawHeight": 9,
       "borderTop": 4,
       "borderBottom": 4,
       "borderLeft": 3,
@@ -430,7 +471,7 @@
       "subMetas": {}
     },
     "bg_green_mono.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "c38c0a60-13da-4c14-98c5-89aabb5c94cf",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -442,6 +483,8 @@
       "trimY": 250,
       "width": 16,
       "height": 16,
+      "rawWidth": 16,
+      "rawHeight": 16,
       "borderTop": 6,
       "borderBottom": 6,
       "borderLeft": 6,
@@ -450,7 +493,7 @@
       "subMetas": {}
     },
     "bg_grey_mono_small.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "805a1753-3771-4058-849a-787b16d5eb05",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -462,6 +505,8 @@
       "trimY": 463,
       "width": 9,
       "height": 9,
+      "rawWidth": 9,
+      "rawHeight": 9,
       "borderTop": 3,
       "borderBottom": 3,
       "borderLeft": 3,
@@ -470,7 +515,7 @@
       "subMetas": {}
     },
     "bg_grey_trans_black_frame_round.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "e2ef70ba-9b4b-4b05-9d6a-f6588c6cf61c",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -482,6 +527,8 @@
       "trimY": 136,
       "width": 14,
       "height": 25,
+      "rawWidth": 14,
+      "rawHeight": 25,
       "borderTop": 10,
       "borderBottom": 7,
       "borderLeft": 4,
@@ -490,7 +537,7 @@
       "subMetas": {}
     },
     "bg_hero_base.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "9012f969-f559-4a8d-bf9a-30f025021d59",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -502,6 +549,8 @@
       "trimY": 1,
       "width": 505,
       "height": 94,
+      "rawWidth": 507,
+      "rawHeight": 94,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -510,7 +559,7 @@
       "subMetas": {}
     },
     "bg_label_grey.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "2711c68b-2fff-41d0-937c-bbb31f58ad02",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -522,6 +571,8 @@
       "trimY": 1,
       "width": 149,
       "height": 28,
+      "rawWidth": 149,
+      "rawHeight": 28,
       "borderTop": 11,
       "borderBottom": 13,
       "borderLeft": 16,
@@ -530,7 +581,7 @@
       "subMetas": {}
     },
     "bg_label_horizontal_round.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "39c53798-c15b-4ee2-9b1d-be30866bdd0e",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -542,6 +593,8 @@
       "trimY": 474,
       "width": 90,
       "height": 35,
+      "rawWidth": 92,
+      "rawHeight": 35,
       "borderTop": 16,
       "borderBottom": 16,
       "borderLeft": 18,
@@ -550,7 +603,7 @@
       "subMetas": {}
     },
     "bg_nailed_round.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "780d4162-d784-485b-8dd8-753b5b04ae22",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -562,6 +615,8 @@
       "trimY": 268,
       "width": 45,
       "height": 45,
+      "rawWidth": 45,
+      "rawHeight": 47,
       "borderTop": 18,
       "borderBottom": 18,
       "borderLeft": 18,
@@ -570,7 +625,7 @@
       "subMetas": {}
     },
     "bg_orange_light_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "f13b337e-e1bc-4bb2-8575-c6f37294f957",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -582,6 +637,8 @@
       "trimY": 335,
       "width": 42,
       "height": 41,
+      "rawWidth": 42,
+      "rawHeight": 41,
       "borderTop": 13,
       "borderBottom": 14,
       "borderLeft": 13,
@@ -590,7 +647,7 @@
       "subMetas": {}
     },
     "bg_panel_top.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "16e92604-a52a-44ad-86b9-249e49be6f63",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -602,6 +659,8 @@
       "trimY": 1,
       "width": 224,
       "height": 90,
+      "rawWidth": 226,
+      "rawHeight": 90,
       "borderTop": 19,
       "borderBottom": 43,
       "borderLeft": 43,
@@ -610,7 +669,7 @@
       "subMetas": {}
     },
     "bg_red_trans.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5178b3a7-28ee-44dd-847d-ec943b1acbc8",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -622,6 +681,8 @@
       "trimY": 1,
       "width": 119,
       "height": 119,
+      "rawWidth": 121,
+      "rawHeight": 119,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 52,
@@ -630,7 +691,7 @@
       "subMetas": {}
     },
     "bg_right_dark.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "cbb36297-d9f3-4ef9-bd04-60da8294acd5",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -642,6 +703,8 @@
       "trimY": 196,
       "width": 126,
       "height": 37,
+      "rawWidth": 126,
+      "rawHeight": 37,
       "borderTop": 12,
       "borderBottom": 13,
       "borderLeft": 16,
@@ -650,7 +713,7 @@
       "subMetas": {}
     },
     "bg_special_noscale.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "99b9f06c-9431-4f3d-9e51-79c43c9ad7eb",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -662,6 +725,8 @@
       "trimY": 414,
       "width": 134,
       "height": 58,
+      "rawWidth": 134,
+      "rawHeight": 60,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -670,7 +735,7 @@
       "subMetas": {}
     },
     "bg_trans_black_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5678d0dd-2225-4973-bc53-e8b665cea983",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -682,6 +747,8 @@
       "trimY": 357,
       "width": 19,
       "height": 17,
+      "rawWidth": 19,
+      "rawHeight": 17,
       "borderTop": 6,
       "borderBottom": 7,
       "borderLeft": 6,
@@ -690,7 +757,7 @@
       "subMetas": {}
     },
     "bg_trans_gold_frame_round.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "bd585906-7b3e-4424-9a8e-7ef174fd98bd",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -702,6 +769,8 @@
       "trimY": 147,
       "width": 45,
       "height": 46,
+      "rawWidth": 45,
+      "rawHeight": 48,
       "borderTop": 20,
       "borderBottom": 21,
       "borderLeft": 19,
@@ -710,7 +779,7 @@
       "subMetas": {}
     },
     "bg_trans_grey_gold_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "231ad740-d110-42e0-b092-ff569fd1e7ce",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -722,6 +791,8 @@
       "trimY": 231,
       "width": 102,
       "height": 98,
+      "rawWidth": 102,
+      "rawHeight": 98,
       "borderTop": 31,
       "borderBottom": 34,
       "borderLeft": 29,
@@ -730,7 +801,7 @@
       "subMetas": {}
     },
     "bg_vertical_center.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "76389512-1cfe-4685-a3e1-ad867f6cbe8e",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -742,6 +813,8 @@
       "trimY": 1,
       "width": 333,
       "height": 12,
+      "rawWidth": 345,
+      "rawHeight": 12,
       "borderTop": 4,
       "borderBottom": 4,
       "borderLeft": 0,
@@ -750,7 +823,7 @@
       "subMetas": {}
     },
     "bg_vertical_left.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "dd81336d-067a-404f-b450-b66c19c4fbaf",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -762,6 +835,8 @@
       "trimY": 1,
       "width": 407,
       "height": 15,
+      "rawWidth": 407,
+      "rawHeight": 15,
       "borderTop": 5,
       "borderBottom": 7,
       "borderLeft": 0,
@@ -770,7 +845,7 @@
       "subMetas": {}
     },
     "bg_vertical_right.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "c9f3c26a-f134-4eb1-af02-02713da82499",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -782,6 +857,8 @@
       "trimY": 1,
       "width": 411,
       "height": 15,
+      "rawWidth": 411,
+      "rawHeight": 15,
       "borderTop": 6,
       "borderBottom": 8,
       "borderLeft": 0,
@@ -790,7 +867,7 @@
       "subMetas": {}
     },
     "bg_white_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "96bccbdb-babc-4a6e-909c-504c95be8830",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -802,6 +879,8 @@
       "trimY": 385,
       "width": 24,
       "height": 75,
+      "rawWidth": 24,
+      "rawHeight": 75,
       "borderTop": 15,
       "borderBottom": 16,
       "borderLeft": 10,
@@ -810,7 +889,7 @@
       "subMetas": {}
     },
     "bg_yellow_black_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "ad64924e-50ac-4956-ae1b-80ce60e4a51a",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -822,6 +901,8 @@
       "trimY": 83,
       "width": 37,
       "height": 58,
+      "rawWidth": 37,
+      "rawHeight": 58,
       "borderTop": 11,
       "borderBottom": 3,
       "borderLeft": 10,
@@ -830,7 +911,7 @@
       "subMetas": {}
     },
     "bg_yellow_mono.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "160b5731-0975-4981-8990-5754e1aabe65",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -842,6 +923,8 @@
       "trimY": 394,
       "width": 30,
       "height": 27,
+      "rawWidth": 30,
+      "rawHeight": 27,
       "borderTop": 8,
       "borderBottom": 10,
       "borderLeft": 10,
@@ -850,7 +933,7 @@
       "subMetas": {}
     },
     "btnBack.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "41a1fe5e-e2aa-4d46-bc4c-d4db3f55ebf6",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -862,6 +945,8 @@
       "trimY": 327,
       "width": 84,
       "height": 85,
+      "rawWidth": 90,
+      "rawHeight": 87,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -870,7 +955,7 @@
       "subMetas": {}
     },
     "btnContinue.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "2f50e0b8-b2f7-460a-8117-0336da528b57",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -882,6 +967,8 @@
       "trimY": 409,
       "width": 93,
       "height": 82,
+      "rawWidth": 93,
+      "rawHeight": 86,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -890,7 +977,7 @@
       "subMetas": {}
     },
     "btn_arrow.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "0b5676d5-c6bb-4d54-8cab-cba3ef900eca",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -902,6 +989,8 @@
       "trimY": 245,
       "width": 29,
       "height": 38,
+      "rawWidth": 31,
+      "rawHeight": 40,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -910,7 +999,7 @@
       "subMetas": {}
     },
     "btn_arrow_tall.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "96f37db1-730e-4a2e-8ac5-1807bf1cf29c",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -922,6 +1011,8 @@
       "trimY": 122,
       "width": 50,
       "height": 111,
+      "rawWidth": 50,
+      "rawHeight": 113,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -930,7 +1021,7 @@
       "subMetas": {}
     },
     "btn_blue_gold_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "2cb434d5-3bf1-4161-9918-80dd116ffa20",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -942,6 +1033,8 @@
       "trimY": 122,
       "width": 35,
       "height": 35,
+      "rawWidth": 35,
+      "rawHeight": 35,
       "borderTop": 17,
       "borderBottom": 14,
       "borderLeft": 14,
@@ -950,7 +1043,7 @@
       "subMetas": {}
     },
     "btn_brown_gold_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5843b072-ed1c-4d16-9457-4187aa4cb313",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -962,6 +1055,8 @@
       "trimY": 194,
       "width": 44,
       "height": 44,
+      "rawWidth": 46,
+      "rawHeight": 44,
       "borderTop": 18,
       "borderBottom": 21,
       "borderLeft": 15,
@@ -970,7 +1065,7 @@
       "subMetas": {}
     },
     "btn_cancel.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5602abd5-025c-4212-9598-55ff0f3ad7e6",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -982,6 +1077,8 @@
       "trimY": 423,
       "width": 74,
       "height": 74,
+      "rawWidth": 74,
+      "rawHeight": 74,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -990,7 +1087,7 @@
       "subMetas": {}
     },
     "btn_gold_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "58a90f0d-cf7b-4171-93ab-8e199c93ecd5",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1002,6 +1099,8 @@
       "trimY": 83,
       "width": 37,
       "height": 36,
+      "rawWidth": 39,
+      "rawHeight": 36,
       "borderTop": 16,
       "borderBottom": 15,
       "borderLeft": 15,
@@ -1010,7 +1109,7 @@
       "subMetas": {}
     },
     "btn_green_gold_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "74e30684-5f43-47cb-ab8a-2ef7de114d98",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1022,6 +1121,8 @@
       "trimY": 159,
       "width": 35,
       "height": 35,
+      "rawWidth": 35,
+      "rawHeight": 35,
       "borderTop": 17,
       "borderBottom": 14,
       "borderLeft": 14,
@@ -1030,7 +1131,7 @@
       "subMetas": {}
     },
     "btn_red_gold_frame.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "b9f65089-185c-4174-95a4-b26e8ae90ebb",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1042,6 +1143,8 @@
       "trimY": 232,
       "width": 36,
       "height": 36,
+      "rawWidth": 36,
+      "rawHeight": 36,
       "borderTop": 18,
       "borderBottom": 15,
       "borderLeft": 15,
@@ -1050,7 +1153,7 @@
       "subMetas": {}
     },
     "btn_yellow.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "41361197-62f9-4a88-8be8-61b3bd69945d",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1062,6 +1165,8 @@
       "trimY": 55,
       "width": 47,
       "height": 44,
+      "rawWidth": 47,
+      "rawHeight": 44,
       "borderTop": 18,
       "borderBottom": 16,
       "borderLeft": 15,
@@ -1070,7 +1175,7 @@
       "subMetas": {}
     },
     "btn_yellow_main-59.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "1253029c-a556-40f1-9cf9-8439d2f87268",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1082,6 +1187,8 @@
       "trimY": 474,
       "width": 3,
       "height": 3,
+      "rawWidth": 116,
+      "rawHeight": 1,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1090,7 +1197,7 @@
       "subMetas": {}
     },
     "btn_yellow_main-63.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "bcad11eb-83a5-4b9c-9845-3561be411dbe",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1102,6 +1209,8 @@
       "trimY": 474,
       "width": 3,
       "height": 3,
+      "rawWidth": 116,
+      "rawHeight": 1,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1110,7 +1219,7 @@
       "subMetas": {}
     },
     "btn_yellow_main-64.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "370c5d55-53ae-46dc-927d-1fbae20aaac1",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1122,6 +1231,8 @@
       "trimY": 474,
       "width": 3,
       "height": 3,
+      "rawWidth": 116,
+      "rawHeight": 1,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1130,7 +1241,7 @@
       "subMetas": {}
     },
     "btn_yellow_main.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "0bdf7ecf-e41c-4338-91b9-10101c501c8e",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1142,6 +1253,8 @@
       "trimY": 1,
       "width": 133,
       "height": 72,
+      "rawWidth": 133,
+      "rawHeight": 72,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 33,
@@ -1150,7 +1263,7 @@
       "subMetas": {}
     },
     "deco_banner.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "0025a8d8-a150-47ed-8d64-8b795d216c31",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1162,6 +1275,8 @@
       "trimY": 380,
       "width": 264,
       "height": 32,
+      "rawWidth": 266,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1170,7 +1285,7 @@
       "subMetas": {}
     },
     "deco_banner_thin.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "7be62015-87aa-4bb5-a45e-2232f69c6e71",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1182,6 +1297,8 @@
       "trimY": 1,
       "width": 228,
       "height": 31,
+      "rawWidth": 228,
+      "rawHeight": 31,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1190,7 +1307,7 @@
       "subMetas": {}
     },
     "deco_white.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "142e382a-0c27-4ffe-ad8e-b6b88bca6d03",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1202,6 +1319,8 @@
       "trimY": 196,
       "width": 123,
       "height": 36,
+      "rawWidth": 123,
+      "rawHeight": 36,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1210,7 +1329,7 @@
       "subMetas": {}
     },
     "divider_horizontal.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "8ac2b8e5-a07d-4fb1-a36c-0886ad4b7a14",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1222,6 +1341,8 @@
       "trimY": 1,
       "width": 479,
       "height": 3,
+      "rawWidth": 479,
+      "rawHeight": 3,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1230,7 +1351,7 @@
       "subMetas": {}
     },
     "divider_vertical.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "1c5d9c0a-4b4a-4fa6-bde8-aacbbc5ba477",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1242,6 +1363,8 @@
       "trimY": 1,
       "width": 3,
       "height": 377,
+      "rawWidth": 3,
+      "rawHeight": 377,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1250,7 +1373,7 @@
       "subMetas": {}
     },
     "glow_explosion.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "d8fd2f48-bd79-49fe-847b-e4720b8093db",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1262,6 +1385,8 @@
       "trimY": 1,
       "width": 193,
       "height": 167,
+      "rawWidth": 193,
+      "rawHeight": 169,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1270,7 +1395,7 @@
       "subMetas": {}
     },
     "glow_horizontal_dark.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "8b48f818-2ea9-4219-8aee-83360ca38e88",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1282,6 +1407,8 @@
       "trimY": 1,
       "width": 44,
       "height": 201,
+      "rawWidth": 44,
+      "rawHeight": 201,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1290,7 +1417,7 @@
       "subMetas": {}
     },
     "glow_shadow.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "a81b47f6-a35d-4a13-a148-e023cdbb67af",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1302,6 +1429,8 @@
       "trimY": 122,
       "width": 110,
       "height": 36,
+      "rawWidth": 110,
+      "rawHeight": 36,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1310,7 +1439,7 @@
       "subMetas": {}
     },
     "glow_white_trans_center.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "f7836d91-6af0-4185-bd66-86699df1c98e",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1322,6 +1451,8 @@
       "trimY": 240,
       "width": 57,
       "height": 56,
+      "rawWidth": 57,
+      "rawHeight": 56,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1330,7 +1461,7 @@
       "subMetas": {}
     },
     "glow_yellow_rect.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "857c1ffd-7095-45e1-80ca-65df136df10b",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1342,6 +1473,8 @@
       "trimY": 335,
       "width": 54,
       "height": 57,
+      "rawWidth": 54,
+      "rawHeight": 57,
       "borderTop": 25,
       "borderBottom": 26,
       "borderLeft": 23,
@@ -1350,7 +1483,7 @@
       "subMetas": {}
     },
     "glow_yellow_round.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "f3817a51-9045-4e2d-b125-24f23bc383e1",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1362,6 +1495,8 @@
       "trimY": 336,
       "width": 44,
       "height": 42,
+      "rawWidth": 44,
+      "rawHeight": 42,
       "borderTop": 14,
       "borderBottom": 15,
       "borderLeft": 14,
@@ -1370,7 +1505,7 @@
       "subMetas": {}
     },
     "icon_arrow_glow_down.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "b143b684-22cf-46e5-8232-c3ec3935d8f0",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1382,6 +1517,8 @@
       "trimY": 214,
       "width": 41,
       "height": 29,
+      "rawWidth": 41,
+      "rawHeight": 29,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1390,7 +1527,7 @@
       "subMetas": {}
     },
     "icon_big_equip.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "0c98474b-5260-493e-9219-74f336772fb3",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1402,6 +1539,8 @@
       "trimY": 227,
       "width": 93,
       "height": 103,
+      "rawWidth": 95,
+      "rawHeight": 103,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1410,7 +1549,7 @@
       "subMetas": {}
     },
     "icon_big_hero.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "44d88c26-33b9-431c-8870-4e6ed8452ac9",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1422,6 +1561,8 @@
       "trimY": 413,
       "width": 94,
       "height": 102,
+      "rawWidth": 94,
+      "rawHeight": 102,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1430,7 +1571,7 @@
       "subMetas": {}
     },
     "icon_big_knowledge.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "329b9853-4abe-4ba8-9654-d0861a4eca53",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1442,6 +1583,8 @@
       "trimY": 222,
       "width": 93,
       "height": 103,
+      "rawWidth": 93,
+      "rawHeight": 103,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1450,7 +1593,7 @@
       "subMetas": {}
     },
     "icon_big_lock.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "357089ad-ca9a-4f61-85f5-7954532f9b51",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1462,6 +1605,8 @@
       "trimY": 327,
       "width": 84,
       "height": 111,
+      "rawWidth": 84,
+      "rawHeight": 111,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1470,7 +1615,7 @@
       "subMetas": {}
     },
     "icon_big_tip.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "d38f50eb-823b-4c06-82f2-c079bbc85462",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1482,6 +1627,8 @@
       "trimY": 410,
       "width": 93,
       "height": 101,
+      "rawWidth": 93,
+      "rawHeight": 101,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1490,7 +1637,7 @@
       "subMetas": {}
     },
     "icon_coin_silver.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "fbe15411-88e9-441e-a00a-ecf224b318eb",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1502,6 +1649,8 @@
       "trimY": 414,
       "width": 95,
       "height": 94,
+      "rawWidth": 97,
+      "rawHeight": 98,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1510,7 +1659,7 @@
       "subMetas": {}
     },
     "icon_confirm.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "8ac43e3a-3e27-4a1e-8e4a-3693fb504235",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1522,6 +1671,8 @@
       "trimY": 1,
       "width": 52,
       "height": 47,
+      "rawWidth": 54,
+      "rawHeight": 47,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1530,7 +1681,7 @@
       "subMetas": {}
     },
     "icon_diamond.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "8ec11454-4e34-4d08-94a3-6ed808e292f6",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1542,6 +1693,8 @@
       "trimY": 414,
       "width": 36,
       "height": 32,
+      "rawWidth": 36,
+      "rawHeight": 32,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1550,7 +1703,7 @@
       "subMetas": {}
     },
     "icon_diamond_big.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "6c11f518-d195-4694-b48c-ecef99806955",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1562,6 +1715,8 @@
       "trimY": 130,
       "width": 53,
       "height": 44,
+      "rawWidth": 53,
+      "rawHeight": 44,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1570,7 +1725,7 @@
       "subMetas": {}
     },
     "icon_energy.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "910239eb-fec3-496a-b5d7-ba4331dd0055",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1582,6 +1737,8 @@
       "trimY": 176,
       "width": 36,
       "height": 48,
+      "rawWidth": 40,
+      "rawHeight": 50,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1590,7 +1747,7 @@
       "subMetas": {}
     },
     "icon_energy_small.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "986b0ea8-3621-4513-83c0-f51ec5f20182",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1602,6 +1759,8 @@
       "trimY": 472,
       "width": 23,
       "height": 23,
+      "rawWidth": 23,
+      "rawHeight": 23,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1610,7 +1769,7 @@
       "subMetas": {}
     },
     "icon_exclaim.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "5f04c7f3-6662-4c76-8197-601b1f74eb20",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1622,6 +1781,8 @@
       "trimY": 482,
       "width": 27,
       "height": 81,
+      "rawWidth": 29,
+      "rawHeight": 81,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1630,7 +1791,7 @@
       "subMetas": {}
     },
     "icon_fighter_assasin.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "dc9b42f2-c8c1-4e4f-aa4a-c4fe184a857e",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1642,6 +1803,8 @@
       "trimY": 335,
       "width": 77,
       "height": 90,
+      "rawWidth": 77,
+      "rawHeight": 90,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1650,7 +1813,7 @@
       "subMetas": {}
     },
     "icon_fighter_mage.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "48f56ccd-616b-4219-9ca4-a538ad30baff",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1662,6 +1825,8 @@
       "trimY": 1,
       "width": 74,
       "height": 75,
+      "rawWidth": 80,
+      "rawHeight": 77,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1670,7 +1835,7 @@
       "subMetas": {}
     },
     "icon_fighter_support.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "fad42a01-b48e-45eb-aa99-07ce98bf7246",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1682,6 +1847,8 @@
       "trimY": 263,
       "width": 69,
       "height": 70,
+      "rawWidth": 77,
+      "rawHeight": 78,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1690,7 +1857,7 @@
       "subMetas": {}
     },
     "icon_fighter_tank.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "adadd311-08ca-4f1a-9918-1b5ea9ec3fab",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1702,6 +1869,8 @@
       "trimY": 310,
       "width": 73,
       "height": 75,
+      "rawWidth": 81,
+      "rawHeight": 77,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1710,7 +1879,7 @@
       "subMetas": {}
     },
     "icon_gold.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "83a2670b-8ba4-4c65-9436-251f899c1153",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1722,6 +1891,8 @@
       "trimY": 235,
       "width": 31,
       "height": 28,
+      "rawWidth": 31,
+      "rawHeight": 28,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1730,7 +1901,7 @@
       "subMetas": {}
     },
     "icon_gold_big.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "a0a766f1-c39e-4d3a-a271-cd7eedb4e3e0",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1742,6 +1913,8 @@
       "trimY": 101,
       "width": 47,
       "height": 44,
+      "rawWidth": 47,
+      "rawHeight": 44,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1750,7 +1923,7 @@
       "subMetas": {}
     },
     "icon_grey_dot.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "6bb0fd33-b61d-4a46-bc24-a2a3e7fa7456",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1762,6 +1935,8 @@
       "trimY": 452,
       "width": 19,
       "height": 20,
+      "rawWidth": 19,
+      "rawHeight": 20,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1770,7 +1945,7 @@
       "subMetas": {}
     },
     "icon_info.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "cb232090-aa06-4b33-81cd-a0c8c82a7fc8",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1782,6 +1957,8 @@
       "trimY": 202,
       "width": 16,
       "height": 46,
+      "rawWidth": 18,
+      "rawHeight": 46,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1790,7 +1967,7 @@
       "subMetas": {}
     },
     "icon_minus_small.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "76512262-0665-4dcf-aada-ecaae5cd6d85",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1802,6 +1979,8 @@
       "trimY": 442,
       "width": 29,
       "height": 28,
+      "rawWidth": 29,
+      "rawHeight": 28,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1810,7 +1989,7 @@
       "subMetas": {}
     },
     "icon_plus_big.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "731f38ef-7a70-4d30-abe3-3a9afc829642",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1822,6 +2001,8 @@
       "trimY": 321,
       "width": 87,
       "height": 84,
+      "rawWidth": 87,
+      "rawHeight": 84,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1830,7 +2011,7 @@
       "subMetas": {}
     },
     "icon_plus_small.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "4d173aad-e48c-4d28-984e-71329fcf6ed1",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1842,6 +2023,8 @@
       "trimY": 304,
       "width": 30,
       "height": 29,
+      "rawWidth": 30,
+      "rawHeight": 29,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1850,7 +2033,7 @@
       "subMetas": {}
     },
     "icon_point1.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "b215a6a3-303e-4db0-aa5e-0f75495eb008",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1862,6 +2045,8 @@
       "trimY": 357,
       "width": 21,
       "height": 21,
+      "rawWidth": 21,
+      "rawHeight": 21,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1870,7 +2055,7 @@
       "subMetas": {}
     },
     "icon_question.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "83740924-e030-42e4-b7e6-483d5b67096a",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1882,6 +2067,8 @@
       "trimY": 136,
       "width": 58,
       "height": 82,
+      "rawWidth": 58,
+      "rawHeight": 86,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1890,7 +2077,7 @@
       "subMetas": {}
     },
     "icon_retry.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "6a204ad3-35c6-484a-a286-a20553d7cb14",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1902,6 +2089,8 @@
       "trimY": 78,
       "width": 50,
       "height": 53,
+      "rawWidth": 50,
+      "rawHeight": 55,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1910,7 +2099,7 @@
       "subMetas": {}
     },
     "icon_switch.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "c2d9856f-172f-4030-bf23-05727a12fe68",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1922,6 +2111,8 @@
       "trimY": 332,
       "width": 77,
       "height": 80,
+      "rawWidth": 81,
+      "rawHeight": 84,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1930,7 +2121,7 @@
       "subMetas": {}
     },
     "icon_switchout.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "abb7019d-c8ce-4714-80b8-3dc6a2498e70",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1942,6 +2133,8 @@
       "trimY": 1,
       "width": 75,
       "height": 80,
+      "rawWidth": 83,
+      "rawHeight": 84,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1950,7 +2143,7 @@
       "subMetas": {}
     },
     "number_sample.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "311109f1-978a-4091-a4aa-ed50f2d97dfe",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1962,6 +2155,8 @@
       "trimY": 122,
       "width": 53,
       "height": 78,
+      "rawWidth": 53,
+      "rawHeight": 80,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1970,7 +2165,7 @@
       "subMetas": {}
     },
     "plate_noscale.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "941ab280-4dab-44df-8fe0-4205eb1fb34a",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -1982,6 +2177,8 @@
       "trimY": 357,
       "width": 44,
       "height": 19,
+      "rawWidth": 44,
+      "rawHeight": 19,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -1990,7 +2187,7 @@
       "subMetas": {}
     },
     "text_defeated.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "b7b86fd7-e2ee-4f0a-adaf-4f453fbbe86a",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -2002,6 +2199,8 @@
       "trimY": 1,
       "width": 354,
       "height": 77,
+      "rawWidth": 360,
+      "rawHeight": 83,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -2010,7 +2209,7 @@
       "subMetas": {}
     },
     "text_victory.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "b0ffb854-0cce-4a0e-9b18-8d9ef014373f",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -2022,6 +2221,8 @@
       "trimY": 414,
       "width": 299,
       "height": 94,
+      "rawWidth": 301,
+      "rawHeight": 94,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -2030,7 +2231,7 @@
       "subMetas": {}
     },
     "title_bg_red.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "ff333f33-692f-4560-bd0a-c882eadd2533",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -2042,6 +2243,8 @@
       "trimY": 1,
       "width": 260,
       "height": 55,
+      "rawWidth": 260,
+      "rawHeight": 55,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
@@ -2050,7 +2253,7 @@
       "subMetas": {}
     },
     "title_bg_yellow.png": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "ebcb2ae5-026f-4308-8224-c53cbe53a356",
       "rawTextureUuid": "1632750c-27b0-415d-b06b-0e9c44b3bca2",
       "trimType": "auto",
@@ -2062,6 +2265,8 @@
       "trimY": 1,
       "width": 226,
       "height": 28,
+      "rawWidth": 226,
+      "rawHeight": 28,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

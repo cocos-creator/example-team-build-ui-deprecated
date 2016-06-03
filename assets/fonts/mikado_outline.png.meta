@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "subMetas": {
     "mikado_outline": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "870d3ea8-15e6-413b-af84-79959192fd30",
       "rawTextureUuid": "5bbcb164-14af-4120-8cc8-f31929e3570b",
       "trimType": "auto",
@@ -18,6 +18,8 @@
       "trimY": 5,
       "width": 504,
       "height": 400,
+      "rawWidth": 512,
+      "rawHeight": 512,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
