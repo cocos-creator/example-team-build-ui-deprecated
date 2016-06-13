@@ -3,6 +3,7 @@
     "__type__": "cc.SceneAsset",
     "_name": "",
     "_objFlags": 0,
+    "_rawFiles": null,
     "scene": {
       "__id__": 1
     }
@@ -103,7 +104,8 @@
         "__id__": 129
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -171,7 +173,8 @@
         "__id__": 113
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -230,7 +233,8 @@
         "__id__": 8
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -282,7 +286,8 @@
         "__id__": 6
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -296,6 +301,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "装备界面",
     "_N$horizontalAlign": 1,
@@ -423,7 +429,8 @@
         "__id__": 96
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -485,7 +492,8 @@
         "__id__": 20
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -544,7 +552,8 @@
         "__id__": 15
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -596,7 +605,8 @@
         "__id__": 13
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -728,7 +738,8 @@
         "__id__": 18
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Widget",
@@ -795,6 +806,7 @@
     "brake": 0.28,
     "elastic": true,
     "bounceDuration": 0.2,
+    "scrollEvents": [],
     "_N$horizontalScrollBar": null,
     "_N$verticalScrollBar": null
   },
@@ -882,7 +894,8 @@
         "__id__": 80
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -941,7 +954,8 @@
         "__id__": 27
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -996,7 +1010,8 @@
         "__id__": 25
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -1010,6 +1025,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "弗格斯",
     "_N$horizontalAlign": 1,
@@ -1152,7 +1168,8 @@
         "__id__": 58
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -1208,7 +1225,8 @@
         "__id__": 32
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -1260,7 +1278,8 @@
         "__id__": 31
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -1274,6 +1293,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "坦克",
     "_N$horizontalAlign": 1,
@@ -1364,7 +1384,8 @@
     "_id": "8d0f88MvJRF6ZbJ5LVkYzFo",
     "_active": true,
     "_components": [],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -1419,7 +1440,8 @@
         "__id__": 36
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -1515,7 +1537,8 @@
         "__id__": 38
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -1529,6 +1552,7 @@
     "_fontSize": 17,
     "_lineHeight": 17,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "150",
     "_N$horizontalAlign": 1,
@@ -1585,7 +1609,8 @@
         "__id__": 40
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -1599,6 +1624,7 @@
     "_fontSize": 20,
     "_lineHeight": 20,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "生命值",
     "_N$horizontalAlign": 1,
@@ -1661,7 +1687,8 @@
     "_id": "26184tOOZRFoo7d5Ds/ud/G",
     "_active": true,
     "_components": [],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -1716,7 +1743,8 @@
         "__id__": 44
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -1812,7 +1840,8 @@
         "__id__": 46
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -1826,6 +1855,7 @@
     "_fontSize": 17,
     "_lineHeight": 17,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "150",
     "_N$horizontalAlign": 1,
@@ -1882,7 +1912,8 @@
         "__id__": 48
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -1896,6 +1927,7 @@
     "_fontSize": 20,
     "_lineHeight": 20,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "攻击力",
     "_N$horizontalAlign": 1,
@@ -1958,7 +1990,8 @@
     "_id": "0ac77r4AxJJ2Js70brZAcE1",
     "_active": true,
     "_components": [],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -2013,7 +2046,8 @@
         "__id__": 52
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -2109,7 +2143,8 @@
         "__id__": 54
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -2123,6 +2158,7 @@
     "_fontSize": 17,
     "_lineHeight": 17,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "150",
     "_N$horizontalAlign": 1,
@@ -2179,7 +2215,8 @@
         "__id__": 56
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -2193,6 +2230,7 @@
     "_fontSize": 20,
     "_lineHeight": 20,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "技能强度",
     "_N$horizontalAlign": 1,
@@ -2308,7 +2346,8 @@
         "__id__": 66
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -2360,7 +2399,8 @@
         "__id__": 61
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -2374,6 +2414,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "技能",
     "_N$horizontalAlign": 1,
@@ -2433,7 +2474,8 @@
         "__id__": 64
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Layout",
@@ -2585,7 +2627,8 @@
     "_id": "7e06b54m8pJ+b/DY0zdedTv",
     "_active": true,
     "_components": [],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -2647,7 +2690,8 @@
         "__id__": 73
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -2699,7 +2743,8 @@
         "__id__": 70
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -2713,14 +2758,14 @@
     "_fontSize": 30,
     "_lineHeight": 30,
     "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "77c5b9a3-729a-48b8-a3d6-6e6e00b62536"
+    },
     "_isSystemFontUsed": false,
     "_N$string": "Use",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
-    "_N$overflow": 0,
-    "_N$file": {
-      "__uuid__": "77c5b9a3-729a-48b8-a3d6-6e6e00b62536"
-    }
+    "_N$overflow": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -2775,9 +2820,9 @@
     "transition": 0,
     "pressedColor": {
       "__type__": "cc.Color",
-      "r": 211,
-      "g": 211,
-      "b": 211,
+      "r": 253,
+      "g": 19,
+      "b": 19,
       "a": 255
     },
     "hoverColor": {
@@ -2881,7 +2926,8 @@
         "__id__": 79
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -2933,7 +2979,8 @@
         "__id__": 77
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -2947,14 +2994,14 @@
     "_fontSize": 30,
     "_lineHeight": 30,
     "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "77c5b9a3-729a-48b8-a3d6-6e6e00b62536"
+    },
     "_isSystemFontUsed": false,
     "_N$string": "Upgrade",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
-    "_N$overflow": 0,
-    "_N$file": {
-      "__uuid__": "77c5b9a3-729a-48b8-a3d6-6e6e00b62536"
-    }
+    "_N$overflow": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -3082,7 +3129,8 @@
         "__id__": 92
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -3137,7 +3185,8 @@
         "__id__": 84
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -3151,6 +3200,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "出战英雄",
     "_N$horizontalAlign": 1,
@@ -3231,7 +3281,8 @@
         "__id__": 87
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Layout",
@@ -3334,7 +3385,8 @@
         "__id__": 90
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -3348,6 +3400,7 @@
     "_fontSize": 35,
     "_lineHeight": 35,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "选择要替换的英雄",
     "_N$horizontalAlign": 1,
@@ -3649,7 +3702,8 @@
         "__id__": 102
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -3701,7 +3755,8 @@
         "__id__": 100
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -3715,6 +3770,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "战斗界面",
     "_N$horizontalAlign": 1,
@@ -3827,7 +3883,8 @@
         "__id__": 107
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -3879,7 +3936,8 @@
         "__id__": 105
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -3893,6 +3951,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "帮助界面",
     "_N$horizontalAlign": 1,
@@ -4005,7 +4064,8 @@
         "__id__": 112
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -4057,7 +4117,8 @@
         "__id__": 110
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Label",
@@ -4071,6 +4132,7 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
+    "_N$file": null,
     "_isSystemFontUsed": true,
     "_N$string": "公会界面",
     "_N$horizontalAlign": 1,
@@ -4210,7 +4272,8 @@
         "__id__": 123
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
@@ -4265,7 +4328,8 @@
         "__id__": 117
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Sprite",
@@ -4369,7 +4433,8 @@
         "__id__": 120
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "cc.Widget",
@@ -4542,7 +4607,7 @@
   {
     "__type__": "cc.Canvas",
     "_name": "",
-    "_objFlags": 1835008,
+    "_objFlags": 3932160,
     "node": {
       "__id__": 2
     },
@@ -4605,7 +4670,8 @@
         "__id__": 131
       }
     ],
-    "_prefab": null
+    "_prefab": null,
+    "groupIndex": 0
   },
   {
     "__type__": "3ca9cPaNV9I2KOs8I2eYIE4",

@@ -10,19 +10,18 @@
             "message": "excel-to-json:parse"
         }
     },
-    "panels": {
-        "panel": {
-            "frame": "panel/panel.html",
-            "type": "dockable",
-            "title": "Demo: Excel to JSON",
-            "width": 600,
-            "height": 600,
-            "messages": [],
-            "profiles": {
-                "local": {
-                    "srcExcelPath": "",
-                    "outJsonName": ""
-                }
+    "panel": {
+        "main": "panel/panel.html",
+        "type": "dockable",
+        "ui": "polymer",
+        "title": "Demo: Excel to JSON",
+        "width": 600,
+        "height": 600,
+        "messages": [],
+        "profiles": {
+            "local": {
+                "srcExcelPath": "",
+                "outJsonName": ""
             }
         }
     },
