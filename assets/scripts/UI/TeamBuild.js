@@ -52,8 +52,8 @@ cc.Class({
             }.bind(this));
         }.bind(this));
         // listen to scroll end
-        this.scrollView.node.on('touchend', this.onScrollEnd.bind(this), true);
-        this.scrollView.node.on('touchcancel', this.onScrollEnd.bind(this), true);
+        this.scrollView.node.on('touchend', this.onScrollEnd.bind(this));
+        this.scrollView.node.on('touchcancel', this.onScrollEnd.bind(this));
         this.scrollView.node.on('touchstart', this.onScrollStart.bind(this));
     },
 
