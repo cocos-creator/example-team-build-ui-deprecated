@@ -2,13 +2,14 @@
   "__type__": "cc.AnimationClip",
   "_name": "team_show_replace",
   "_objFlags": 0,
+  "_rawFiles": null,
   "_duration": 0.17,
   "sample": 30,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
     "paths": {
-      "HeroList/bg_heroBase": {
+      "HeroList/base": {
         "props": {
           "scaleX": [
             {
@@ -32,7 +33,7 @@
           ]
         }
       },
-      "curHero/btns": {
+      "HeroStats/btns": {
         "props": {
           "scaleX": [
             {
@@ -56,7 +57,7 @@
           ]
         }
       },
-      "Team/hintReplace": {
+      "TeamSlots/hintReplace": {
         "props": {
           "opacity": [
             {

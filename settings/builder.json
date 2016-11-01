@@ -1,5 +1,9 @@
 {
   "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSdk": [
+    "anysdk"
+  ],
   "orientation": {
     "landscapeLeft": true,
     "landscapeRight": true,
@@ -7,7 +11,7 @@
     "upsideDown": false
   },
   "packageName": "org.cocos2d.tbc",
-  "startScene": "383d9ce0-fac0-467d-98aa-335df83e73d9",
+  "startScene": "466bae30-a4eb-490b-811e-dc5c6809298e",
   "title": "tbc",
   "webOrientation": "auto"
 }

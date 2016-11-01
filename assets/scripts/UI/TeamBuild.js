@@ -9,32 +9,32 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        scrollView: cc.ScrollView,
+        pageView: cc.PageView,
         listLayout: cc.Layout,
         teamLayout: cc.Layout,
+        statLayout: cc.Layout,
         skillList: SkillList,
         iconClass: cc.Sprite,
         labelClass: cc.Label,
         labelName: cc.Label,
-        labelHp: cc.Label,
-        labelAtk: cc.Label,
-        labelAp: cc.Label,
-        barHp: cc.ProgressBar,
-        barAtk: cc.ProgressBar,
-        barAp: cc.ProgressBar,
         sfClasses: [cc.SpriteFrame],
         strClasses: {
             default: [],
             type: 'String'
         },
-        heroListPrefab: cc.Prefab,
-        heroTeamPrefab: cc.Prefab,
+        strStatNames: {
+            default: [],
+            type: 'String'
+        },
+        heroPortraitPrefab: cc.Prefab,
+        heroIconPrefab: cc.Prefab,
+        statPrefab: cc.Prefab,
         snapTime: 0,
     },
 
     // use this for initialization
-    init (mainMenu) {
-        this.mainMenu = mainMenu;
+    onLoad () {
+        // this.mainMenu = mainMenu;
         this.heroInfos = []; //{id, name, class, sf, iconAnchor, hp, atk, ap}
         this.lastContentPosX = 0;
         this.heroesInList = [];
@@ -51,81 +51,54 @@ cc.Class({
                 }.bind(this));
             }.bind(this));
         }.bind(this));
-        // listen to scroll end
-        this.scrollView.node.on('touchend', this.onScrollEnd.bind(this));
-        this.scrollView.node.on('touchcancel', this.onScrollEnd.bind(this));
-        this.scrollView.node.on('touchstart', this.onScrollStart.bind(this));
-    },
-
-    onScrollStart (event) {
-        this.lastContentPosX = this.scrollView.getContentPosition().x;
-    },
-
-    onScrollEnd (event) {
-        let contentPos = this.scrollView.getContentPosition();
-        // cc.log(contentPos.x);
-        this.scrollToNext(contentPos.x);
-    },
-
-    scrollToNext (contentPosX) {
-        let destPosX = 0;
-        let idx = -1;
-        let length = this.heroesInList.length;
-        for (let i = 0; i < length; ++i) {
-            if (contentPosX > - this.heroesInList[0].x) {
-                destPosX = - this.heroesInList[0].x;
-                idx = 0;
-                break;
-            } else if (contentPosX >= -this.heroesInList[i].x &&
-                contentPosX < -this.heroesInList[i - 1].x) {
-                if (contentPosX < this.lastContentPosX) {
-                    idx = i;
-                    destPosX = - this.heroesInList[i].x;
-                } else {
-                    destPosX = - this.heroesInList[i - 1].x;
-                    idx = i - 1;
-                }
-                break;
-            } else if (contentPosX < - this.heroesInList[length - 1].x) {
-                destPosX = - this.heroesInList[length - 1].x;
-                idx = length - 1;
-                break;
-            }
+        this.stats = [];
+        for (let i = 0; i < 3; ++i) {
+            let stat = cc.instantiate(this.statPrefab).getComponent('StatDisplay');
+            stat.init(this.strStatNames[i]);
+            this.stats.push(stat);
+            this.statLayout.node.addChild(stat.node);
         }
+    },
 
+    onPageEvent (sender, eventType) {
+        // 翻页事件
+        if (eventType !== cc.PageView.EventType.PAGE_TURNING) {
+            return;
+        }
+        let idx = sender.getCurrentPageIndex();
+        console.log("当前所在的页面索引:" + idx);
         if (this.curSelectedIdx !== idx) {
             if (this.curSelectedIdx > -1) {
-                this.heroesInList[this.curSelectedIdx].getComponent('HeroInList').onDeselect();
+                this.heroesInList[this.curSelectedIdx].getComponent('HeroPortrait').onDeselect();
             }
             this.curSelectedIdx = idx;
-            this.heroesInList[this.curSelectedIdx].getComponent('HeroInList').onSelect();
+            this.heroesInList[this.curSelectedIdx].getComponent('HeroPortrait').onSelect();
             this.anim.play('team_cur_off');
         }
-        this.scrollView._startAutoScroll(cc.pNeg(cc.p(this.scrollView.content.x - destPosX, 0)), this.snapTime, true);
     },
 
     scrollToHeroIdx (idx) {
-        let destPosX = 0;
-        let length = this.heroesInList.length;
-        let contentPosX = -this.heroesInList[idx].x;
-        this.scrollToNext(contentPosX);
+        // let destPosX = 0;
+        // let length = this.heroesInList.length;
+        // let contentPosX = -this.heroesInList[idx].x;
+        this.pageView.scrollToPage(idx, this.snapTime);
     },
 
     onHeroLoaded () {
         // cc.log(DataMng.activeSkills);
         let totalDist = 0;
         for (let i = 0; i < this.heroInfos.length; ++i ) {
-            let heroInList = cc.instantiate(this.heroListPrefab).getComponent('HeroInList');
+            let heroInList = cc.instantiate(this.heroPortraitPrefab).getComponent('HeroPortrait');
+            this.pageView.addPage(heroInList.node);
             heroInList.init(this.heroInfos[i]);
-            this.scrollView.content.addChild(heroInList.node);
             this.heroesInList.push(heroInList.node);
         }
         for (let i = 0; i < this.teamHeroes.length; ++i) {
             let heroInfo = this.teamHeroes[i];
-            let heroInTeam = cc.instantiate(this.heroTeamPrefab).getComponent('HeroInTeam');
-            this.teamLayout.node.addChild(heroInTeam.node);
-            heroInTeam.init(this, i, heroInfo);
-            this.heroesInTeam.push(heroInTeam);
+            let heroIcon = cc.instantiate(this.heroIconPrefab).getComponent('HeroIcon');
+            this.teamLayout.node.addChild(heroIcon.node);
+            heroIcon.init(this, i, heroInfo);
+            this.heroesInTeam.push(heroIcon);
         }
     },
 
@@ -154,12 +127,9 @@ cc.Class({
         this.iconClass.spriteFrame = this.sfClasses[HeroClass[heroInfo.class]];
         this.labelClass.string = this.strClasses[HeroClass[heroInfo.class]];
         this.labelName.string = heroInfo.name;
-        this.labelHp.string = heroInfo.hp;
-        this.labelAtk.string = heroInfo.atk;
-        this.labelAp.string = heroInfo.ap;
-        this.barHp.progress = heroInfo.hp/MAX_HP;
-        this.barAtk.progress = heroInfo.atk/MAX_ATK;
-        this.barAp.progress = heroInfo.ap/MAX_AP;
+        this.stats[0].setStat(heroInfo.hp/MAX_HP, heroInfo.hp);
+        this.stats[1].setStat(heroInfo.atk/MAX_ATK, heroInfo.atk);
+        this.stats[2].setStat(heroInfo.ap/MAX_AP, heroInfo.ap);
         this.skillList.init(heroInfo);
     },
 

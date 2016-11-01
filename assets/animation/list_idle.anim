@@ -2,6 +2,7 @@
   "__type__": "cc.AnimationClip",
   "_name": "list_idle",
   "_objFlags": 0,
+  "_rawFiles": null,
   "_duration": 2,
   "sample": 15,
   "speed": 1,
@@ -52,6 +53,22 @@
             {
               "frame": 2,
               "value": 0
+            }
+          ]
+        }
+      },
+      "sprite": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
             }
           ]
         }

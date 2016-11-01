@@ -2,13 +2,14 @@
   "__type__": "cc.AnimationClip",
   "_name": "team_cur_off",
   "_objFlags": 0,
+  "_rawFiles": null,
   "_duration": 0.3333333333333333,
   "sample": 30,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
     "paths": {
-      "bg_heroBase/glow_shadow": {
+      "HeroList/base/glow_shadow": {
         "props": {
           "scaleX": [
             {
@@ -32,7 +33,7 @@
           ]
         }
       },
-      "curHero/namePlate": {
+      "HeroStats/namePlate": {
         "props": {
           "scaleX": [
             {
@@ -56,7 +57,7 @@
           ]
         }
       },
-      "curHero/stats": {
+      "HeroStats/stats": {
         "props": {
           "scaleX": [
             {
@@ -80,7 +81,7 @@
           ]
         }
       },
-      "curHero/skills": {
+      "HeroStats/skills": {
         "props": {
           "scaleX": [
             {
@@ -104,7 +105,7 @@
           ]
         }
       },
-      "curHero/btns": {
+      "HeroStats/btns": {
         "props": {
           "scaleX": [
             {

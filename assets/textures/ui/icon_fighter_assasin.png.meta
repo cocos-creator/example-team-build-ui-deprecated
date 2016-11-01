@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "848ba5a4-cfbf-450d-94b5-b9d2cf8076b4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "icon_fighter_assasin": {
+      "ver": "1.0.3",
+      "uuid": "7bd45dbd-26b9-448a-8d58-f2ab58b1edf4",
+      "rawTextureUuid": "848ba5a4-cfbf-450d-94b5-b9d2cf8076b4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 76,
+      "height": 88,
+      "rawWidth": 77,
+      "rawHeight": 90,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -15,6 +15,7 @@ module.exports = {
                     let posArr = heroInfo.iconPos.split('|');
                     let anchorArr = heroInfo.portraitAnchor.split('|');
                     heroInfo.iconPos = cc.p(parseFloat(posArr[0]), parseFloat(posArr[1]));
+                    heroInfo.portraitScale = parseFloat(heroInfo.portraitScale);
                     heroInfo.portraitAnchor = cc.p(parseFloat(anchorArr[0]), parseFloat(anchorArr[1]));
                     let sfUrl = 'heroes/' + heroInfo.id;
                     cc.loader.loadRes(sfUrl, cc.SpriteFrame, function(err, spriteFrame) {
@@ -38,18 +39,16 @@ module.exports = {
             } else {
                 let list = data;
                 let count = list.length;
-                cc.loader.loadRes('skills/skill_icons', cc.SpriteAtlas, function(err, atlas) {
-                    if (err) {
-                        cc.log(err);
-                    } else {
-                        for (let i = 0; i < count; ++i) {
-                            let skillInfo = list[i];
-                            skillInfo.sf = atlas.getSpriteFrame(skillInfo.icon);
-                            activeSkills[skillInfo.id] = skillInfo;
+                for (let i = 0; i < list.length; ++i) {
+                   let skillInfo = list[i];
+                   cc.loader.loadRes('skills/' + skillInfo.icon, cc.SpriteFrame, function(err, spriteFrame) {
+                        skillInfo.sf = spriteFrame;
+                        activeSkills[skillInfo.id] = skillInfo;
+                        if (--count <= 0) {
+                            return cb(list)
                         }
-                        return cb(list);
-                    }
-                }); 
+                   });
+                }
             }
         });
     },
@@ -60,18 +59,16 @@ module.exports = {
             } else {
                 let list = data;
                 let count = list.length;
-                cc.loader.loadRes('skills/skill_icons', cc.SpriteAtlas, function(err, atlas) {
-                    if (err) {
-                        cc.log(err);
-                    } else {
-                        for (let i = 0; i < count; ++i) {
-                            let skillInfo = list[i];
-                            skillInfo.sf = atlas.getSpriteFrame(skillInfo.icon);
-                            passiveSkills[skillInfo.id] = skillInfo;
+                for (let i = 0; i < list.length; ++i) {
+                   let skillInfo = list[i];
+                   cc.loader.loadRes('skills/' + skillInfo.icon, cc.SpriteFrame, function(err, spriteFrame) {
+                        skillInfo.sf = spriteFrame;
+                        passiveSkills[skillInfo.id] = skillInfo;
+                        if (--count <= 0) {
+                            return cb(list)
                         }
-                        return cb(list);
-                    }
-                }); 
+                   });
+                }
             }
         });
     },

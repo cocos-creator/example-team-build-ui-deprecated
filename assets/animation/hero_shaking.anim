@@ -2,6 +2,7 @@
   "__type__": "cc.AnimationClip",
   "_name": "hero_shaking",
   "_objFlags": 0,
+  "_rawFiles": null,
   "_duration": 0.64,
   "sample": 25,
   "speed": 1,
@@ -36,7 +37,7 @@
       ]
     },
     "paths": {
-      "blueRing": {
+      "highlight": {
         "props": {
           "scaleX": [
             {
