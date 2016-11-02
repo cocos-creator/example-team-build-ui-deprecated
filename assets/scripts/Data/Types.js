@@ -5,6 +5,12 @@ const HeroClass = cc.Enum({
     Wizard: -1
 });
 
+const HeroStats = cc.Enum({
+    HP: -1,
+    ATK: -1,
+    AP: -1
+});
+
 const ActiveSkill = cc.Enum({
     None: -1,
     HealOne: -1,
@@ -31,5 +37,6 @@ const PassiveSkill = cc.Enum({
 module.exports = {
     ActiveSkill,
     PassiveSkill,
-    HeroClass
+    HeroClass,
+    HeroStats
 };

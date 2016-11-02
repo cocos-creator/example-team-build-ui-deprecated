@@ -193,7 +193,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1334,
+      "width": 500,
       "height": 580
     },
     "_children": [
@@ -446,7 +446,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 2650,
+      "width": 500,
       "height": 450
     },
     "_children": [],
@@ -456,7 +456,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -660,
+      "x": -250,
       "y": 0
     },
     "_skewX": 0,
@@ -488,7 +488,7 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 2650,
+      "width": 500,
       "height": 450
     },
     "_resize": 1,
@@ -499,7 +499,7 @@
       "height": 40
     },
     "_N$startAxis": 0,
-    "_N$padding": 417,
+    "_N$padding": 0,
     "_N$spacingX": 0,
     "_N$spacingY": 15,
     "_N$verticalDirection": 1,
@@ -632,11 +632,6 @@
         "__id__": 16
       }
     ],
-    "_N$pageSize": {
-      "__type__": "cc.Size",
-      "width": 500,
-      "height": 0
-    },
     "_N$direction": 0,
     "_N$indicator": {
       "__id__": 14
@@ -660,9 +655,9 @@
     },
     "_enabled": true,
     "isAlignOnce": true,
-    "_alignFlags": 45,
-    "_left": 0,
-    "_right": 0,
+    "_alignFlags": 21,
+    "_left": 417,
+    "_right": 417,
     "_top": 0,
     "_bottom": 170,
     "_verticalCenter": 0,

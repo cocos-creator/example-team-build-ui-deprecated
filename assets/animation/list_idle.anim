@@ -55,6 +55,16 @@
               "value": 0
             }
           ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
         }
       },
       "sprite": {

@@ -39,10 +39,6 @@ cc.Class({
         } else {
             this.skillIcons[2].node.active = false;
         }
-    },
+    }
 
-    // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
 });

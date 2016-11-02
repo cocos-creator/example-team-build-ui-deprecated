@@ -3,7 +3,7 @@
   "_name": "list_select",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.3333333333333333,
+  "_duration": 0.33,
   "sample": 30,
   "speed": 1,
   "wrapMode": 1,
@@ -52,13 +52,16 @@
     },
     "paths": {
       "heroGlow": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            }
-          ]
+        "props": {},
+        "comps": {
+          "cc.Sprite": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
         }
       },
       "sprite": {
